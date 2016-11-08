@@ -1,0 +1,41 @@
+[filter "media"]
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
+[user]
+    name = Chao Ren
+    email = renchaorevee@gmail.com
+[alias]
+    p = pull --rebase
+    st = status
+    br = branch
+    co = checkout
+    d = diff
+    cp = cherry-pick
+    l = log
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[core]
+    editor = vim
+[push]
+    default = simple
+[credential]
+    helper = osxkeychain
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
